@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Links - Link Shortener</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="dashboard">
+            <div class="header">
+                <div>
+                    <h1 id="welcomeMessage">Hey there! 👋</h1>
+                    <p>Ready to shorten some links?</p>
+                </div>
+                <button id="logoutBtn" class="btn outline">Sign out</button>
+            </div>
+            
+            <div class="shortener">
+                <h2>🔗 Shorten a link</h2>
+                <form id="urlForm">
+                    <div class="field">
+                        <label>Paste your long URL here</label>
+                        <input type="url" id="longUrl" placeholder="https://example.com/some/very/long/url/that/nobody/wants/to/remember" required>
+                    </div>
+                    <button type="submit" class="btn primary">Make it short!</button>
+                </form>
+            </div>
+            
+            <div class="links-section">
+                <h2>📋 Your links</h2>
+                <div id="linksList">
+                    <div class="empty-state">
+                        <p>No links yet! Create your first short link above 👆</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="./script.js"></script>
+</body>
+</html>
